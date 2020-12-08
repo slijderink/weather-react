@@ -11,5 +11,5 @@ export default function Weather(props){
     
     axios.get(apiUrl).then(handleResponse);
     return (
-        <Loader type="Grid" color="#00BFFF" height={80} width={80} />)
+        <Loader type="Grid" color="red" height={80} width={80} />)
 }

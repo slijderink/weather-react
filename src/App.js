@@ -2,16 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import Weather from './Weather'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World React</h1>
-        <Weather city='London'/>
-        
-      </header>
+      <Weather />
     </div>
   );
 }
-
-export default App;

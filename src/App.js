@@ -7,4 +7,4 @@ export default function App() {
       <Weather city="Paris" />
     </div>
   );
-  }
+}

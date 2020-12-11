@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import Loader from "react-loader-spinner";
 import "./Weather.css";
-​
 export default function Weather(props) {
   const [city, setCity] = useState(props.city);
   const [weatherData, setWeatherData] = useState({ ready: false });
-​
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -21,15 +19,12 @@ export default function Weather(props) {
   function search() {
     let apiKey = "4ab5028f202d824f0f01ee605dd0d893";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-​
     axios.get(apiUrl).then(handleResponse);
   }
-​
   function changeCity(event) {
     event.preventDefault();
     setCity(event.target.value);
   }
-​
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -44,7 +39,6 @@ export default function Weather(props) {
               <span className="currentTime"></span>
             </div>
           </div>
-​
           <h2>
             {weatherData.degrees}
             <span className="units">
@@ -68,7 +62,6 @@ export default function Weather(props) {
             </div>
           </div>
           <div className="row"></div>
-​
           <div className="row">
             <div className="offset-1 col-10">
               <div className="enterCityForm">

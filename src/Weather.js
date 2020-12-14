@@ -81,7 +81,7 @@ export default function Weather() {
         </div>
       </div>
       <small>
-        <a href="https://github.com/slijderink/" target="_blank">
+        <a href="https://github.com/slijderink/weather-react" target="_blank">
           Open-source 
         </a>{" "}
         coded by Liza Slijderink

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
- import Loader from 'react-loader-spinner'
+import Loader from 'react-loader-spinner';
 
 export default function Weather(props) {
 const[weatherData,setWeatherData]=useState({ready:false});
@@ -9,19 +9,16 @@ const[weatherData,setWeatherData]=useState({ready:false});
 function handleResponse(response){
 setWeatherData({
   ready:true,
-  temperature:response.data.main.temp,
+  degrees:response.data.main.temp,
   wind:response.data.wind.speed,
   city:response.data.name,
   humidity:response.data.main.humidity,
   weather:response.data.main.weather[0].description,
   imgUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
-  date:"Wednesday 12 December",
-
+  date:"Wednesday 12 December"
 });
-
-  setTemperature(response.data.main.temp);
- 
 }
+
 if (weatherData.ready){
   return (
     <div className="Weather">
@@ -105,9 +102,6 @@ if (weatherData.ready){
   let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
   
-return (<Loader type="Circles" color="#00BFFF" height={80} width={80}/>
-
-);
+return <Loader type="Circles" color="#00BFFF" height={80} width={80}/>;
 }
-
 }

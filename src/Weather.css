@@ -2,7 +2,7 @@
   font-family: "Merriweather", serif;
 }
 .Weather h1 i {
-  font-size: 90px;
+  font-size: 70px;
 }
 .Weather h1 {
   text-align: center;
@@ -43,7 +43,7 @@
   left: 215px;
 }
 .Weather .weather-app {
-  background-color: #dae4dd;
+  background-color: #2ed460;
   border: solid 1px #555555;
   border-radius: 10px;
 }

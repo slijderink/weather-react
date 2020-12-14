@@ -98,7 +98,7 @@ if (weatherData.ready){
   );
 
 } else {
-  const apiKey="4ab5028f202d824f0f01ee605dd0d893";
+  const apiKey="0958d0742e2cb0db1d2e839284637665";
   let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
   

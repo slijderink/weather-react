@@ -43,7 +43,7 @@
   left: 215px;
 }
 .Weather .weather-app {
-  background-color: #9becb3;
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
   border: solid 1px #555555;
   border-radius: 10px;
 }

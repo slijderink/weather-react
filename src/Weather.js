@@ -13,7 +13,7 @@ setWeatherData({
   wind:response.data.wind.speed,
   city:response.data.name,
   humidity:response.data.main.humidity,
-  weather:response.data.main.weather[0].description,
+  description:response.data.main.weather[0].description,
   imgUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
   date:"Wednesday 12 December"
 });
@@ -51,7 +51,7 @@ if (weatherData.ready){
           </div>
           <div className="class-5">
             <ul>
-              <li className="text-capitalize"> {weatherData.weather}</li>
+              <li className="text-capitalize"> {weatherData.description}</li>
               <li>Humidity:{weatherData.humidity}</li>
               <li>Wind:{weatherData.wind} km/h</li>
             </ul>

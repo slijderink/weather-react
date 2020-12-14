@@ -15,6 +15,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <div className="weather-app">
+
         <div className="row">
           <div className="col-8">
             <span className="lastUpdate">
@@ -81,9 +82,9 @@ export default function Weather() {
       </div>
       <small>
         <a href="https://github.com/slijderink/" target="_blank">
-          Open-source code
+          Open-source 
         </a>{" "}
-        by Liza Slijderink
+        coded by Liza Slijderink
       </small>
     </div>
   );

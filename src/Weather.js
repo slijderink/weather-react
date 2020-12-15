@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import Loader from 'react-loader-spinner';
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
 const[weatherData,setWeatherData]=useState({ready:false});
+
 
 function handleResponse(response){
 setWeatherData({
@@ -15,7 +17,7 @@ setWeatherData({
   humidity:response.data.main.humidity,
   description:response.data.main.weather[0].description,
   imgUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
-  date:"Wednesday 12 December"
+  date:new Date(response.data.dt*1000),
 });
 }
 
@@ -27,7 +29,7 @@ if (weatherData.ready){
         <div className="row">
           <div className="col-8">
             <span className="lastUpdate">
-              <p> Last update: {weatherData.date}</p>
+              <p> Last update: <FormattedDate date={weatherData.date}/></p>
             </span>
           </div>
           <div className="col-4">

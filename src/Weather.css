@@ -35,7 +35,7 @@
 }
 .Weather canvas {
   width: 65px;
-  margin: 5px;
+  margin: 10px;
 }
 .Weather .Weather {
   max-width: 600px;

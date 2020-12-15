@@ -17,7 +17,7 @@ setWeatherData({
   city:response.data.name,
   humidity:response.data.main.humidity,
   description:response.data.weather[0].description,
-  imgUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
+  imgUrl:`https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
   date:new Date(response.data.dt*1000),
 });
 }

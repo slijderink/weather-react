@@ -34,7 +34,8 @@
   left: 40px;
 }
 .Weather .icon {
-  width: 100px;
+  width: 120px;
+  margin: 10px;
 }
 .Weather .Weather {
   max-width: 600px;

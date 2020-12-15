@@ -28,7 +28,6 @@ function search(){
   axios.get(apiUrl).then(handleResponse);
 }
 
-
 function handleSubmit(event){
   event.preventDefault();
   search();
@@ -36,9 +35,7 @@ function handleSubmit(event){
 
 function handleCityChange(event){
   setCity(event.target.value);
-
 }
-
 
 if (weatherData.ready){
   return (
@@ -89,8 +86,7 @@ if (weatherData.ready){
   );
 
 } else {
-  
-  
+  search();
 return <Loader type="Circles" color="#00BFFF" height={80} width={80}/>;
 }
 }

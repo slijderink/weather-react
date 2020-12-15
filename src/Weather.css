@@ -33,7 +33,7 @@
   position: relative;
   left: 40px;
 }
-.Weather .canvas {
+.Weather canvas {
   width: 120px;
   margin: 10px;
 }

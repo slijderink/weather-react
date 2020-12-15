@@ -16,7 +16,7 @@ setWeatherData({
   wind:response.data.wind.speed,
   city:response.data.name,
   humidity:response.data.main.humidity,
-  description:response.data.main.weather[0].description,
+  description:response.data.weather[0].description,
   imgUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
   date:new Date(response.data.dt*1000),
 });

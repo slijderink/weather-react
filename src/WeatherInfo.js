@@ -16,13 +16,14 @@ export default function WeatherInfo(props) {
             <span className="currentTime"></span>
           </div>
         </div>
-        <h2>
-          {props.data.degrees}
+        
+            <h2>
 
-          <WeatherUnits celsius={props.data.temperature}/>
-          
+          <WeatherUnits celsius={props.data.degrees}/>
+        
           <WeatherIcon code={props.data.icon} className="icon"/>
         </h2>
+        
         <div className="row">
           <div className="col-7">
             <h1>{props.data.city}</h1>

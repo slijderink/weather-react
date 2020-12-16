@@ -5,19 +5,24 @@
   font-size: 70px;
 }
 .Weather h1 {
-  text-align: center;
   color: #080808;
-  font-size: 40px;
+  font-size: 45px;
+  font-family: "Merriweather", serif;
+  position: relative;
+  top: 8px;
+  left: 40px;
 }
 .Weather ul {
   list-style-type: none;
+  font-family: "Merriweather", serif;
 }
 .Weather h2 {
   font-size: 80px;
   color: rgb(24, 23, 23);
   text-align: center;
   display: block;
-  margin: 25px;
+  margin: 10px;
+  font-family: "Merriweather", serif;
 }
 
 .Weather .lastUpdate,
@@ -27,6 +32,7 @@
   font-size: 15px;
   position: relative;
   top: 30px;
+  font-family: "Merriweather", serif;
 }
 
 .Weather .lastUpdate {
@@ -34,14 +40,17 @@
   left: 40px;
 }
 .Weather canvas {
-  width: 65px;
+  width: 75px;
   margin: 10px;
+  position: relative;
+  top: 20px;
 }
 .Weather .Weather {
   max-width: 600px;
   margin: 30px;
   position: relative;
   left: 215px;
+  font-family: "Merriweather", serif;
 }
 .Weather .weather-app {
   background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
@@ -69,9 +78,10 @@
 }
 
 .Weather .units {
-  font-size: 20px;
+  font-size: 60px;
   position: relative;
-  top: -40px;
+  top: 5px;
+  font-family: "Merriweather", serif;
 }
 .Weather .clButton {
   background-color: black;
@@ -108,4 +118,11 @@
 .Weather p img {
   width: 40px;
   text-align: center;
+}
+
+.displayUnits {
+  font-size: 15px;
+  position: relative;
+  top: -30px;
+  font-family: "Merriweather", serif;
 }

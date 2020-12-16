@@ -20,14 +20,14 @@ function fahrenheit(){
     return(
 <span className="units">
      <span>{Math.round(props.celsius)}</span>
-     <span> °C| <a href="/" onClick={showFahrenheit}>°F</a></span>
+     <span className="displayUnits"> °C| <a href="/" onClick={showFahrenheit}>°F</a></span>
 </span>);
 } else {
     return (
 <span className="units">
      <span>{Math.round(fahrenheit())}</span>
-     <span ><a href="/" onClick={showCelsius}>°C
-     </a>|F°</span>
+     <span className="displayUnits"><a href="/" onClick={showCelsius}>°C
+     </a>°|F°</span>
 </span>);
 }
 }

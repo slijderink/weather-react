@@ -2,21 +2,14 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherUnits from "./WeatherUnits";
+import "./Weather.css";
 
 export default function WeatherInfo(props) {
     return (
          <React.Fragment>
-    <div className="row">
-          <div className="col-8">
-            <span className="lastUpdate">
-              <p> Last update: <FormattedDate date={props.data.date}/></p>
-            </span>
-          </div>
-          <div className="col-4">
-            <span className="currentTime"></span>
-          </div>
-        </div>
-        
+     <span className="lastUpdate">
+       <p> Last update: <FormattedDate date={props.data.date}/></p>
+   </span>
             <h2>
 
           <WeatherUnits celsius={props.data.degrees}/>
@@ -25,10 +18,10 @@ export default function WeatherInfo(props) {
         </h2>
         
         <div className="row">
-          <div className="col-7">
+          <div className="city col-7">
             <h1>{props.data.city}</h1>
           </div>
-          <div className="class-5">
+          <div className="col-5">
             <ul>
               <li className="text-capitalize"> {props.data.description}</li>
               <li>Humidity:{props.data.humidity}%</li>

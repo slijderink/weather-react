@@ -8,15 +8,12 @@
   color: #080808;
   font-size: 40px;
   font-family: "Merriweather", serif;
-  position: relative;
-  top: 8px;
-  left: 150px;
+  margin-left: 120px;
+  margin-top: 20px;
 }
 .Weather ul {
   list-style-type: none;
   font-family: "Merriweather", serif;
-  position: relative;
-  left: 90px;
 }
 .Weather h2 {
   font-size: 80px;

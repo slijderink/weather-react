@@ -1,0 +1,15 @@
+.weatherForecast {
+  text-align: center;
+}
+
+.weatherForecast canvas {
+  display: block;
+  margin: 25px;
+  width: 50px;
+}
+.time {
+  margin: auto;
+  font-size: 15px;
+  position: relative;
+  bottom: -32px;
+}

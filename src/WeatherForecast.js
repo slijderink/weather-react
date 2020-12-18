@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import axios from "axios";
 import "./WeatherForecast.css";
-import WeatherIcon from "./WeatherIcon";
+
+import ForecastPreview from "./ForecastPreview";
 
 export default function WeatherForecast(props){
     const[loaded,setLoaded]=useState(false);
@@ -12,12 +13,15 @@ function handleForecastResponse(response){
     setLoaded(true);
 }
 
-if (loaded){
+if (loaded && props.city===forecast.city.name){
     return (
-    <div className="weatherForecat row">
-      {new Date(forecast.list[0].dt*1000).getHours()}:00
-      <WeatherIcon code={forecast.list[0].weather[0].icon}/>
-      {Math.round(forecast.list[0].main.temp)}°C     
+    <div className="weatherForecast row">
+            <ForecastPreview data={forecast.list[0]}/>
+             <ForecastPreview data={forecast.list[1]}/>
+              <ForecastPreview data={forecast.list[2]}/>
+               <ForecastPreview data={forecast.list[3]}/>
+                <ForecastPreview data={forecast.list[4]}/>
+                 <ForecastPreview data={forecast.list[5]}/>
    </div>);
 } 
 else {

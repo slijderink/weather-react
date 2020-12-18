@@ -69,9 +69,7 @@ if (weatherData.ready){
                       className="form-control btn btn-primary shadow-sm"
                     />
                   </div>
-                  <div className="col-1">
-                    <button className="clButton">CL</button>
-                  </div>
+                  
                 </div>
               </form>
             </div>

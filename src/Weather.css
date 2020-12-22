@@ -8,7 +8,6 @@
   color: #080808;
   font-size: 40px;
   font-family: "Merriweather", serif;
-  margin-left: 120px;
   margin-top: 20px;
 }
 .Weather ul {
@@ -36,7 +35,7 @@
 
 .Weather .lastUpdate {
   position: relative;
-  left: 40px;
+  margin-left: 40px;
 }
 .Weather canvas {
   width: 75px;
@@ -101,4 +100,14 @@
   position: relative;
   top: -30px;
   font-family: "Merriweather", serif;
+}
+
+.Weather ul {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .city h1 {
+    margin-left: 120px;
+  }
 }
